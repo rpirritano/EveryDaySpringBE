@@ -11,7 +11,13 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EntityScan(basePackages = {"com.app.domain"})
 @EnableJpaRepositories(basePackages = {"com.app.repositories"})
 @EnableTransactionManagement
-
 public class RepositoryConfiguration {
-
+	
+	/*
+	 * @Configuration  tells the Spring Framework this is a Java configuration class.
+		@EnableAutoConfiguration tells Spring Boot to do its auto-configuration magic. This is what has Spring Boot automatically create the Spring Beans with sensible defaults for our tests.
+		@EntityScan specifies the packages to look for JPA Entities.
+		@EnableJpaRepositories enables the auto-configuration of Spring Data JPA.
+		@EnableTransactionManagement Enables Spring’s annotation-driven transaction management
+	 */
 }
