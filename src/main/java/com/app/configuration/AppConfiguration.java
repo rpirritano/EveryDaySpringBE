@@ -24,8 +24,8 @@ public class AppConfiguration {
 	@Bean
 	public InternalResourceViewResolver viewResolver() {
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-		viewResolver.setPrefix("/webapp/WEB-INF/views/");
-		viewResolver.setSuffix(".jsp");
+		viewResolver.setPrefix("/resources/templates/");  //("/webapp/WEB-INF/views/");
+		viewResolver.setSuffix(".html");
 		viewResolver.setViewClass(JstlView.class);
 		return viewResolver;
 

@@ -1,3 +1,11 @@
-
-
 //https://springframework.guru/spring-boot-web-application-part-5-spring-security/
+
+
+input[type=submit] {
+     background:none!important;
+     border:none;
+     padding:0!important;
+     color: blue;
+     text-decoration: underline;
+     cursor:pointer;
+}

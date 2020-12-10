@@ -11,7 +11,7 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
-
+/*
 @Component
 public class ProductLoader implements ApplicationListener<ContextRefreshedEvent> {
 
@@ -44,5 +44,5 @@ public class ProductLoader implements ApplicationListener<ContextRefreshedEvent>
         productRepository.save(mug);
 
         log.info("Saved Mug - id:" + mug.getId());
-    }
-}
+    } 
+}  */
