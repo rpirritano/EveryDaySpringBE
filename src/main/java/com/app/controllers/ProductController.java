@@ -46,7 +46,7 @@ public class ProductController {
     @RequestMapping(value = "product", method = RequestMethod.POST)
     public String saveProduct(Product product){
         productService.saveProduct(product);
-        return "redirect:/product/" + product.getId();
+        return "redirect:/product/show/" + product.getId();
     }
 
     @RequestMapping("product/delete/{id}")
@@ -54,7 +54,7 @@ public class ProductController {
         productService.deleteProduct(id);
         return "redirect:/products";
     }
-    
+
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login(){
          return "login";

@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.Predicate;
 
+
 @Service
 @Profile("map")
 public class UserServiceMapImpl extends AbstractMapService implements UserService {
@@ -62,4 +63,3 @@ public class UserServiceMapImpl extends AbstractMapService implements UserServic
         return (User) returnUser.get();
     }
 }
-

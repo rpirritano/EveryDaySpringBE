@@ -8,4 +8,3 @@ import org.springframework.stereotype.Service;
 @Profile("map")
 public class RoleServiceMapImpl extends AbstractMapService {
 }
-

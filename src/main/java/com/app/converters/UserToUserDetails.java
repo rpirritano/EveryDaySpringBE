@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.Collection;
 
+
 @Component
 public class UserToUserDetails implements Converter<User, UserDetails> {
     @Override
@@ -30,3 +31,4 @@ public class UserToUserDetails implements Converter<User, UserDetails> {
         return userDetails;
     }
 }
+

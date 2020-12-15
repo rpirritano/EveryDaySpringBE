@@ -1,7 +1,9 @@
 package com.app.services.mapservices;
 
 import com.app.domain.DomainObject;
+
 import java.util.*;
+
 
 public abstract class AbstractMapService  {
     protected Map<Integer, DomainObject> domainMap;
@@ -41,4 +43,3 @@ public abstract class AbstractMapService  {
     }
 
 }
-

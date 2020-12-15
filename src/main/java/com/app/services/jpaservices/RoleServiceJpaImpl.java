@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import javax.persistence.EntityManager;
 import java.util.List;
 
+
 @Service
 @Profile("jpadao")
 public class RoleServiceJpaImpl extends AbstractJpaDaoService implements RoleService {
@@ -46,4 +47,3 @@ public class RoleServiceJpaImpl extends AbstractJpaDaoService implements RoleSer
         em.getTransaction().commit();
     }
 }
-

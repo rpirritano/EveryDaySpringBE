@@ -44,10 +44,10 @@ public class SpringJpaBootstrap implements ApplicationListener<ContextRefreshedE
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
         loadProducts();
-        loadUsers();
-        loadRoles();
-        assignUsersToUserRole();
-        assignUsersToAdminRole();
+        //loadUsers();
+        //loadRoles();
+        //assignUsersToUserRole();
+        //assignUsersToAdminRole();
     }
 
     private void loadProducts() {
@@ -69,7 +69,7 @@ public class SpringJpaBootstrap implements ApplicationListener<ContextRefreshedE
 
         log.info("Saved Mug - id:" + mug.getId());
     }
-
+/*
     private void loadUsers() {
         User user1 = new User();
         user1.setUsername("user");
@@ -122,7 +122,7 @@ public class SpringJpaBootstrap implements ApplicationListener<ContextRefreshedE
                 });
             }
         });
-    }
+    } */
 }
 
 

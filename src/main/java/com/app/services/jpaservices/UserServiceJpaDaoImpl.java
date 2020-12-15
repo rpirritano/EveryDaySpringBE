@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import javax.persistence.EntityManager;
 import java.util.List;
 
+
 @Service
 @Profile("jpadao")
 public class UserServiceJpaDaoImpl extends AbstractJpaDaoService implements UserService {
@@ -67,4 +68,3 @@ public class UserServiceJpaDaoImpl extends AbstractJpaDaoService implements User
         return em.createQuery("from User where userName = :userName", User.class).setParameter("userName", userName).getSingleResult();
     }
 }
-

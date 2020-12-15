@@ -13,4 +13,3 @@ public class AbstractJpaDaoService {
         this.emf = emf;
     }
 }
-
